@@ -29,7 +29,11 @@ class SiriProxy::Plugin::Siriplay < SiriProxy::Plugin
 
   listen_for /hello siri/i do
     say "Shut the fuck off, you ugly twat!" #say something to the user!
-    
+    object = SiriAddViews.new
+    object.make_root(last_ref_id)
+    answer = SiriAnswer.new("Tweet", [
+      SiriAnswerLine.new('logo','http://bralalala.com/middle-finger'), # this just makes things looks nice, but is obviously specific to my username
+    ])    
     request_completed #always complete your request! Otherwise the phone will "spin" at the user!
   end
   
