@@ -28,7 +28,7 @@ class SiriProxy::Plugin::Siriplay < SiriProxy::Plugin
   end 
 
   listen_for /hello siri/i do
-    say "Shut the fuck off, you ugly twat!" #say something to the user!
+    say "Shut the fuck up, you ugly twat!" #say something to the user!
     object = SiriAddViews.new
     object.make_root(last_ref_id)
     answer = SiriAnswer.new("Finger", [
