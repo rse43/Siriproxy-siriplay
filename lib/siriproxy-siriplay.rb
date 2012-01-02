@@ -10,7 +10,7 @@ require 'pp'
 # Remember to add other plugins to the "config.yml" file if you create them!
 ######
 
-class SiriProxy::Plugin::Example < SiriProxy::Plugin
+class SiriProxy::Plugin::Siriplay < SiriProxy::Plugin
   def initialize(config)
     #if you have custom configuration options, process them here!
   end
