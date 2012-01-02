@@ -1,0 +1,2 @@
+    - name: 'Siriplay'
+      git: 'git://github.com/rse43/Siriplay.git'
